@@ -15,20 +15,19 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
    print("кнопка нажата")
             lightOn = !lightOn
+        updateUI()
         
-        if lightOn {
-        view.backgroundColor = .white
-        } else {
-            view.backgroundColor = .black
         }
-
         
-    
-    }
+        
+        func updateUI() {
+             view.backgroundColor = lightOn ? .white : .black
+        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        updateUI()
     }
 
 
