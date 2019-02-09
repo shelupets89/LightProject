@@ -24,16 +24,20 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0MK-9v-Lrh"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asset 4" translatesAutoresizingMaskIntoConstraints="NO" id="jYx-dJ-Uj4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asset 4" translatesAutoresizingMaskIntoConstraints="NO" id="jYx-dJ-Uj4">
                                 <rect key="frame" x="87" y="232" width="240" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="272" id="7oL-rR-dxO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fMA-45-ECg"/>
+                                    <constraint firstAttribute="width" constant="240" id="i2K-IX-FRK"/>
+                                    <constraint firstAttribute="height" constant="272" id="krC-xx-KUs"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asset 5" translatesAutoresizingMaskIntoConstraints="NO" id="GSQ-yI-69x">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asset 5" translatesAutoresizingMaskIntoConstraints="NO" id="GSQ-yI-69x">
                                 <rect key="frame" x="87" y="232" width="240" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
@@ -43,13 +47,18 @@
                         <constraints>
                             <constraint firstItem="YWo-nQ-v7G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Knl-NO-WJ1"/>
                             <constraint firstItem="YWo-nQ-v7G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NNu-mH-NCM"/>
+                            <constraint firstItem="jYx-dJ-Uj4" firstAttribute="bottom" secondItem="GSQ-yI-69x" secondAttribute="bottom" id="UGB-3N-vmK"/>
                             <constraint firstItem="YWo-nQ-v7G" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bus-Al-igZ"/>
                             <constraint firstItem="YWo-nQ-v7G" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ci1-Bg-xym"/>
+                            <constraint firstItem="jYx-dJ-Uj4" firstAttribute="centerY" secondItem="YWo-nQ-v7G" secondAttribute="centerY" id="ilt-KL-HBL"/>
+                            <constraint firstItem="jYx-dJ-Uj4" firstAttribute="top" secondItem="GSQ-yI-69x" secondAttribute="top" id="lzY-B8-hXc"/>
+                            <constraint firstItem="jYx-dJ-Uj4" firstAttribute="leading" secondItem="GSQ-yI-69x" secondAttribute="leading" id="q6L-WZ-51V"/>
+                            <constraint firstItem="jYx-dJ-Uj4" firstAttribute="trailing" secondItem="GSQ-yI-69x" secondAttribute="trailing" id="rHJ-zb-LfE"/>
+                            <constraint firstItem="jYx-dJ-Uj4" firstAttribute="centerX" secondItem="YWo-nQ-v7G" secondAttribute="centerX" id="xga-LN-d7l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="lampOff" destination="GSQ-yI-69x" id="DWs-KQ-6h2"/>
                         <outlet property="lampOn" destination="jYx-dJ-Uj4" id="Gxt-gG-ClS"/>
                     </connections>
                 </viewController>

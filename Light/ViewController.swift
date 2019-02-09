@@ -12,19 +12,18 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var lampOn: UIImageView!
-    @IBOutlet weak var lampOff: UIImageView!
-    
     var lightOn = true
     
     @IBAction func buttonPressed(_ sender: UIButton) {
    print("кнопка нажата")
             lightOn = !lightOn
         
-        if lightOn {
-            lampOn.isHidden = false
+       if lightOn {
+           lampOn.isHidden = false
         } else {
             lampOn.isHidden = true
         }
+        
         updateUI()
         
         }
